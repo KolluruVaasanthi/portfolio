@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaasanthi Kolluru - Resume</title>
+  <style>
+    :root {
+      --primary: #1e293b;
+      --secondary: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--primary);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .resume-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--bg);
+      padding: 3rem 3.5rem;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    .actions-bar {
+      max-width: 850px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-secondary {
+      background: #e2e8f0;
+      color: var(--primary);
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-line {
+      font-size: 0.95rem;
+      color: var(--secondary);
+    }
+
+    .contact-line a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+
+    p {
+      color: var(--secondary);
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .entry {
+      margin-bottom: 1rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--primary);
+    }
+
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.92rem;
+      color: var(--secondary);
+      font-style: italic;
+      margin-bottom: 0.35rem;
+    }
+
+    ul {
+      padding-left: 1.3rem;
+      margin-top: 0.4rem;
+    }
+
+    li {
+      font-size: 0.93rem;
+      color: var(--secondary);
+      margin-bottom: 0.35rem;
+    }
+
+    li strong {
+      color: var(--primary);
+    }
+
+    .skills-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .actions-bar {
+        display: none;
+      }
+      .resume-wrapper {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="actions-bar">
+    <a href="../index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
+    <button onclick="window.print()" class="btn">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+        <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+      </svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <main class="resume-wrapper">
+    <header>
+      <h1>VAASANTHI KOLLURU</h1>
+      <div class="contact-line">
+        Phone: +91 8247655615 &nbsp;|&nbsp; 
+        E-mail: <a href="mailto:kolluruvaasanthi@gmail.com">kolluruvaasanthi@gmail.com</a> &nbsp;|&nbsp; 
+        LinkedIn: <a href="https://www.linkedin.com/in/kolluru-vaasanthi-731b58383" target="_blank" rel="noopener">kolluru-vaasanthi-731b58383</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>OBJECTIVE</h2>
+      <p>
+        Electronics and Communication Engineering student with knowledge of Python, SQL, Object-Oriented Programming,
+        Data Structures and Algorithms, HTML, and CSS, with an interest in software development. Hands-on experience
+        through academic and engineering projects, along with knowledge of MATLAB, ANSYS HFSS, and FPGA-based digital
+        design. Seeking an internship or entry-level opportunity to apply my technical and problem-solving skills, contribute to
+        practical projects, and develop my expertise in a professional environment.
+      </p>
+    </section>
+
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Vignan’s Foundation for Science, Technology & Research (VFSTR)</span>
+          <span>Guntur, Andhra Pradesh</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Bachelor of Technology – Electronics and Communication Engineering; CGPA: 7.3</span>
+          <span>Expected 2027</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>Sri Chaitanya Junior College</span>
+          <span>Guntur, Andhra Pradesh</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Intermediate (MPC); Percentage: 89.5%</span>
+          <span>Year of Passing: 2023</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>Sri Venkateswara Bala Kutter</span>
+          <span>Guntur, Andhra Pradesh</span>
+        </div>
+        <div class="entry-subheader">
+          <span>SSC; CGPA: 9.8</span>
+          <span>Year of Passing: 2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>TECHNICAL SKILLS</h2>
+      <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> Python</li>
+        <li><strong>Web technologies:</strong> HTML, CSS, JavaScript (ES6+)</li>
+        <li><strong>Core CS:</strong> OOPs, MySQL, Data Structures & Algorithms</li>
+        <li><strong>Software and Tools:</strong> Google Colab, Microsoft Excel, VS Code, LaTeX, MATLAB, Xilinx Vivado, ANSYS HFSS, CST Microwave Studio</li>
+        <li><strong>Soft Skills:</strong> Problem-Solving, Communication, Teamwork, Adaptability</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>PROJECTS</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>A laser-based communication system to transmit Morse code signals over line-of-sight</span>
+        </div>
+        <p>
+          Developed transmitter and receiver modules using Arduino and a high-efficiency decoding algorithm for Morse code translation.
+        </p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>Terahertz Metamaterial Absorber</span>
+        </div>
+        <p>
+          Designed and simulated a Terahertz metamaterial absorber in CST Microwave Studio for high-frequency applications. Achieved 99.9% peak absorption at 4.5 THz with S-parameters below -10 dB through precise geometric optimization.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>CERTIFICATIONS</h2>
+      <ul>
+        <li><strong>Cisco Networking Academy:</strong> Python Essentials 1 & Python Essentials 2.</li>
+        <li><strong>Cognizant SkillSpring:</strong> Prompt Engineering Foundation, Introduction to Agile, Introduction to Agentic AI.</li>
+        <li><strong>MSME Technology Centre:</strong> Training in Innovative Industry Technology.</li>
+        <li><strong>Cambridge University:</strong> Preliminary English Test (B1, Score: 150).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ROLES AND RESPONSIBILITIES</h2>
+      <ul>
+        <li><strong>Technical Presenter (ISRO Space Summit):</strong> Presented insights on the Chandrayaan mission to students and delegates, explaining key mission objectives, technologies, and achievements in a clear and engaging manner.</li>
+        <li><strong>Event Coordinator (Guest Lectures and Workshops):</strong> Coordinated the planning and execution of guest lectures and technical workshops by managing communication between faculty, speakers, and participants.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>INTERESTS</h2>
+      <ul>
+        <li>Singing and Playing Guitar</li>
+        <li>Reading Books</li>
+        <li>Sketching</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
